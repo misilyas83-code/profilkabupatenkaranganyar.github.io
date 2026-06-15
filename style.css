@@ -145,3 +145,32 @@ height:80vh;
     line-height: 1.8;
     font-size: 1.05rem;
 }
+
+/* --- STYLE UNTUK MODAL FOTO DI SAMPING --- */
+.img-modal-side {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Biar foto pas di dalam ruangnya dan gak gepeng */
+  border-top-left-radius: 0.3rem; /* Biar ujung kiri atas melengkung ngikutin modal */
+  border-bottom-left-radius: 0.3rem; /* Biar ujung kiri bawah melengkung */
+}
+
+/* Biar pas dibuka di HP, tampilan fotonya pindah ke atas teks dan rapi */
+@media (max-width: 767.98px) {
+  .img-modal-side {
+    height: 250px; /* Batasi tinggi foto di HP biar gak kepanjangan */
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+/* Efek Panah Muter Pas Collapse Aktif */
+.id-panah {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+[aria-expanded="true"] .id-panah {
+    transform: rotate(180deg);
+}

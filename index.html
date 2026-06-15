@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website Profil Kabupaten Karanganyar">
     <meta name="keywords" content="Karanganyar, Wisata Karanganyar, Candi Cetho, Grojogan Sewu">
-    <title>Profil Kabupaten Karanganyar</title>
+    <title>Kabupaten Karanganyar</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -39,9 +39,10 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#wisata">Wisata</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kuliner-khas">Kuliner</a></li>
                 <li class="nav-item"><a class="nav-link" href="#sejarah">Sejarah</a></li>
                 <li class="nav-item"><a class="nav-link" href="#geografis">Geografis</a></li>
-                <li class="nav-item"><a class="nav-link" href="#wisata">Wisata</a></li>
                 <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
             </ul>
         </div>
@@ -50,7 +51,7 @@
 
 <!-- ================= CAROUSEL ================= -->
 <header id="beranda">
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
@@ -61,12 +62,12 @@
     <div class="carousel-inner">
 
         <div class="carousel-item active">
-            <img src="https://i.pinimg.com/736x/0d/a6/af/0da6afbc44df6170a0c5f5c7415037eb.jpg" class="d-block w-100 hero-img" alt="">
+            <img src="https://i.pinimg.com/736x/3c/f2/6a/3cf26a159fb2d561e228a808698c63a0.jpg" class="d-block w-100 hero-img" alt="">
             <div class="overlay"></div>
             <div class="carousel-caption">
                 <h1>Air Terjun Grojogan Sewu</h1>
                 <p>Destinasi wisata alam paling populer di Karanganyar.</p>
-                <a href="https://www.traveloka.com/id-id/explore/destination/air-terjun-grojogan-sewu-acc/362612" class="btn btn-success btn-lg">Jelajahi</a>
+                <a href="#wisata" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-2">Jelajahi Destinasi</a>
             </div>
         </div>
 
@@ -76,7 +77,7 @@
             <div class="carousel-caption">
                 <h1>Candi Cetho</h1>
                 <p>Candi Hindu bersejarah di lereng Gunung Lawu.</p>
-                <a href="https://www.traveloka.com/id-id/explore/destination/candi-cetho-acc/409006?clickref=1100lCoYuwn6&utm_id=6wVpZzyA&campaign_id=1100l6465&partner_id=1101l345763&adref=6a27ae77ed5a1b9d33cddfab&gad_source=1" class="btn btn-warning btn-lg">Lihat Detail</a>
+                <a href="#wisata" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-2">Jelajahi Destinasi</a>
             </div>
         </div>
 
@@ -86,7 +87,7 @@
             <div class="carousel-caption">
                 <h1>Kemuning Sky Hills</h1>
                 <p>Panorama pegunungan yang menakjubkan.</p>
-                <a href="https://www.traveloka.com/id-id/explore/destination/wahana-lokasi-jam-buka-harga-tiket-kemuning-sky-hills-gt/538002" class="btn btn-primary btn-lg">Explore</a>
+                <a href="#wisata" class="btn btn-success btn-lg rounded-pill fw-bold px-4 py-2">Jelajahi Destinasi</a>
             </div>
         </div>
 
@@ -116,11 +117,11 @@
 
         <div class="col-lg-4 col-md-6 col-12 reveal">
             <div class="card h-100 shadow card-hover">
-                <img src="https://i.pinimg.com/1200x/d8/82/2c/d8822ce0d3c4f995b7fe012f83fdd642.jpg" class="card-img-top">
+                <img src="https://i.pinimg.com/736x/e6/2d/d1/e62dd1457588a8a566d56c865b2187a0.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5><b>Air Terjun Grojogan Sewu</b></h5>
                     <p>Air terjun ikonik yang berada di kawasan Tawangmangu.</p>
-                    <a href="https://id.wikipedia.org/wiki/Grojogan_Sewu" class="btn btn-success">Baca Selengkapnya</a>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalGrojoganSide">Baca Selengkapnya</button>
                 </div>
             </div>
         </div>
@@ -131,7 +132,7 @@
                 <div class="card-body">
                     <h5><b>Candi Cetho</b></h5>
                     <p>Candi peninggalan Hindu yang terkenal di lereng Gunung Lawu.</p>
-                    <a href="https://id.wikipedia.org/wiki/Candi_Ceto" class="btn btn-warning">Baca Selengkapnya</a>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCethoSide">Baca Selengkapnya</button>
                 </div>
             </div>
         </div>
@@ -142,13 +143,111 @@
                 <div class="card-body">
                     <h5><b>Candi Sukuh</b></h5>
                     <p>Salah satu candi unik yang memiliki bentuk berbeda dari candi lainnya.</p>
-                    <a href="https://id.wikipedia.org/wiki/Candi_Sukuh" class="btn btn-primary">Baca Selengkapnya</a>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalSukuhSide">Baca Selengkapnya</button>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
+</section>
+
+<!-- ================= DESTINASI LAINNYA ================= -->
+<div class="row g-4">
+  <div class="col-lg-4 col-md-6 col-12"></div>
+  <div class="col-lg-4 col-md-6 col-12"></div>
+  <div class="col-lg-4 col-md-6 col-12"></div>
+</div>
+<div class="container">
+  <div class="collapse" id="wisataLainnya">
+    <div class="row g-4 mt-1">
+    
+      <div class="col-lg-4 col-md-6 col-12 reveal">
+        <div class="card h-100 shadow card-hover">
+          <img src="https://i.pinimg.com/736x/0d/a6/af/0da6afbc44df6170a0c5f5c7415037eb.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5><b>Air Terjun Jumog</b></h5>
+            <p>Terletak di Berjo, Ngargoyoso. Terkenal karena lokasinya yang sejuk dan jalurnya relatif lebih ramah dibanding air terjun lain.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalJumog">Baca Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 reveal">
+        <div class="card h-100 shadow card-hover">
+          <img src="https://i.pinimg.com/736x/9e/a7/79/9ea77970abdaa5a8300cc7c221611ed3.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5><b>The Lawu Park</b></h5>
+            <p>Lokasinya di Gondosuli, Tawangmangu. Sangat diminati karena punya konsep wonderland salju di tengah gunung.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalLawuPark">Baca Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 reveal">
+        <div class="card h-100 shadow card-hover">
+          <img src="https://i.pinimg.com/736x/73/f7/43/73f74345d227bf440aa0f45f562e8cbc.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5><b>Telaga Madirda:</b></h5>
+            <p>Danau alami eksotis di area sawah Berjo, Ngargoyoso. Airnya langsung dari mata air gunung jadi jernih banget.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalMadirda">Baca Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+</div>
+
+<div class="text-center mt-5 mb-5">
+  <button class="btn btn-success rounded-3 px-4 py-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#wisataLainnya" aria-expanded="false">
+    Lihat Destinasi Lainnya <i class="bi bi-chevron-down ms-2 id-panah"></i>
+  </button>
+</div>
+
+<!-- ================= KULINER ================= -->
+ <section class="py-5 bg-light" id="kuliner-khas">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <h2 class="fw-bold">Kuliner Khas Tradisional</h2>
+      <p class="text-muted">Jangan lewatkan kelezatan kuliner otentik ini saat berkunjung ke Karanganyar</p>
+    </div>
+
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6 col-12 reveal">
+        <div class="card h-100 shadow-sm card-hover border-0">
+          <img src="https://i.pinimg.com/736x/64/b1/9a/64b19a2a96156831e10d21f64852ae8b.jpg" class="card-img-top" alt="Sate Kelinci">
+          <div class="card-body text-center">
+            <h5 class="fw-bold card-title">Sate Kelinci</h5>
+            <p class="card-text text-muted">Kuliner legendaris lereng Lawu dengan daging empuk bersiram bumbu kacang kental yang gurih dan menghangatkan badan.</p>
+            <span class="badge bg-success">Paling Dicari</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 reveal">
+        <div class="card h-100 shadow-sm card-hover border-0">
+          <img src="https://i.pinimg.com/736x/51/95/2f/51952faae37ca89e277022b883c8975b.jpg" class="card-img-top" alt="Molen Tawangmangu">
+          <div class="card-body text-center">
+            <h5 class="fw-bold card-title">Molen Tawangmangu</h5>
+            <p class="card-text text-muted">Camilan hangat berbahan dasar pisang pilihan yang dibalut kulit pastri renyah. Sangat cocok dinikmati di tengah udara dingin.</p>
+            <span class="badge bg-success"> Manis & Renyah</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12 col-12 reveal">
+        <div class="card h-100 shadow-sm card-hover border-0">
+          <img src="https://i.pinimg.com/1200x/71/e4/2d/71e42d63801d738086d72f999de641e2.jpg" class="card-img-top" alt="Teh Kemuning">
+          <div class="card-body text-center">
+            <h5 class="fw-bold card-title">Teh Kemuning</h5>
+            <p class="card-text text-muted">Daun teh segar asli langsung dari perkebunan Kebun Teh Kemuning. Aromanya pekat dan rasanya menenangkan.</p>
+            <span class="badge bg-success">Alami</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- ================= SEJARAH ================= -->
@@ -161,15 +260,15 @@
 </div>
 
 <div class="col-lg-6 reveal">
-<h2>Sejarah Karanganyar</h2>
+<h2><b>Sejarah Karanganyar</b></h2>
 <p class="justify-text">
-Kabupaten <b>Karanganyar</b> merupakan salah satu kabupaten di Provinsi Jawa Tengah yang terletak di sebelah timur Kota Surakarta. Sejarah Karanganyar tidak dapat dipisahkan dari perjuangan Raden Mas Said atau Pangeran Sambernyawa dalam melawan penjajahan pada masa Kerajaan Mataram. Nama <b><i>Karanganyar</i></b> mulai dikenal sejak <b>19 April 1745</b> ketika wilayah ini dijadikan sebagai basis perjuangan dan pusat kekuatan pasukan Raden Mas Said.
+Kabupaten Karanganyar merupakan salah satu kabupaten di Provinsi Jawa Tengah yang terletak di sebelah timur Kota Surakarta. Sejarah Karanganyar tidak dapat dipisahkan dari perjuangan <b>Raden Mas Said</b> atau <b>Pangeran Sambernyawa</b> dalam melawan penjajahan pada masa Kerajaan Mataram. Nama <b><i>Karanganyar</i></b> mulai dikenal sejak <b>19 April 1745</b> ketika wilayah ini dijadikan sebagai basis perjuangan dan pusat kekuatan pasukan Raden Mas Said.
 
-Nama "Karanganyar" memiliki makna filosofis yang mendalam. Kata <i><b>"Karang"</b></i> melambangkan kewibawaan, kekuatan, dan keteguhan, sedangkan <i><B>"Anyar"</B></i> berarti baru. Secara keseluruhan, nama Karanganyar dimaknai sebagai harapan akan lahirnya kehidupan, pemerintahan, dan semangat perjuangan yang baru bagi masyarakatnya.
+Nama "<b>Karanganyar</b>" memiliki makna filosofis yang mendalam. Kata <i>"Karang"</i> melambangkan kewibawaan, kekuatan, dan keteguhan, sedangkan <i>"Anyar"</i> berarti baru. Secara keseluruhan, nama <b>Karanganyar</b> dimaknai sebagai harapan akan lahirnya kehidupan, pemerintahan, dan semangat perjuangan yang baru bagi masyarakatnya.
 
-<p class="justify-text">Perjalanan sejarah Karanganyar terus berkembang seiring perubahan pemerintahan di Jawa. Setelah melalui berbagai fase sejak masa Mataram, Kasunanan Surakarta, hingga Mangkunegaran, wilayah ini akhirnya ditetapkan sebagai kabupaten pada <b>18 November 1917</b> dengan dilantiknya KRT Hardjohasmoro sebagai Bupati pertama. Tanggal tersebut kemudian ditetapkan sebagai <b>Hari Jadi Kabupaten Karanganyar.
-</b>
-Kini Kabupaten Karanganyar dikenal sebagai daerah yang kaya akan potensi wisata, budaya, pertanian, dan sejarah. Berada di kawasan lereng Gunung Lawu, Karanganyar memiliki berbagai destinasi terkenal seperti <i>Candi Sukuh, Candi Cetho, Grojogan Sewu Tawangmangu,</i> serta berbagai peninggalan sejarah yang menjadi bagian penting dari identitas daerah. Dengan perpaduan antara nilai sejarah, budaya, dan keindahan alam, Karanganyar terus berkembang sebagai salah satu kabupaten unggulan di Provinsi Jawa Tengah.
+<p class="justify-text">
+    Perjalanan sejarah Karanganyar terus berkembang seiring perubahan pemerintahan di Jawa. Setelah melalui berbagai fase sejak masa <b>Mataram</b>, <b>Kasunanan Surakarta</b>, hingga <b>Mangkunegaran</b>, wilayah ini akhirnya ditetapkan sebagai kabupaten pada <b>18 November 1917</b> dengan dilantiknya <b>KRT Hardjohasmoro</b> sebagai Bupati pertama. Tanggal tersebut kemudian ditetapkan sebagai <b>Hari Jadi Kabupaten Karanganyar</b>.
+    Kini Kabupaten Karanganyar dikenal sebagai daerah yang kaya akan potensi wisata, budaya, pertanian, dan sejarah. Berada di kawasan lereng <b>Gunung Lawu</b>, Karanganyar memiliki berbagai destinasi terkenal seperti <i>Candi Sukuh, Candi Cetho, Grojogan Sewu Tawangmangu,</i> serta berbagai peninggalan sejarah yang menjadi bagian penting dari identitas daerah. Dengan perpaduan antara nilai sejarah, budaya, dan keindahan alam, <b>Karanganyar</b> terus berkembang sebagai salah satu kabupaten unggulan di <b>Provinsi Jawa Tengah</b>.
 </p>
 <button class="btn btn-success">Pelajari Lebih Lanjut</button>
 </div>
@@ -183,21 +282,21 @@ Kini Kabupaten Karanganyar dikenal sebagai daerah yang kaya akan potensi wisata,
 <div class="container">
 <div class="row align-items-center">
 
-<div class="col-lg-6 reveal">
+<div class="col-lg-6 col-12 order-2 order-lg-1 reveal">
 <h2><b>Geografis Karanganyar</b></h2>
 <p class="justify-text">
-    <b>Kabupaten Karanganyar</b> terletak di bagian timur Provinsi Jawa Tengah dan berbatasan langsung dengan Provinsi Jawa Timur di kawasan Gunung Lawu. Secara geografis, Kabupaten Karanganyar berada pada koordinat sekitar 110°40'–111°10' Bujur Timur dan 7°28'–7°46' Lintang Selatan dengan luas wilayah sekitar 773,78 km².
+    Kabupaten Karanganyar terletak di bagian timur <b>Provinsi Jawa Tengah</b> dan berbatasan langsung dengan <b>Provinsi Jawa Timur</b> di kawasan <b>Gunung Lawu</b>. Secara geografis, Kabupaten Karanganyar berada pada koordinat sekitar<b> 110°40'–111°10' Bujur Timur</b> dan<b> 7°28'–7°46' Lintang Selatan</b> dengan luas wilayah sekitar<b>773,78 km²</b>.
 </p>
 <p class="justify-text">
-    Wilayah Kabupaten Karanganyar memiliki topografi yang beragam, mulai dari dataran rendah hingga pegunungan. Bagian barat didominasi oleh dataran yang menjadi pusat pemerintahan dan aktivitas ekonomi, sedangkan bagian timur berupa kawasan perbukitan dan pegunungan yang berada di lereng Gunung Lawu. Kondisi geografis ini menjadikan Karanganyar memiliki udara yang sejuk serta potensi besar di sektor pertanian, perkebunan, dan pariwisata.
+    Wilayah Kabupaten Karanganyar memiliki topografi yang beragam, mulai dari dataran rendah hingga pegunungan. Bagian barat didominasi oleh dataran yang menjadi pusat pemerintahan dan aktivitas ekonomi, sedangkan bagian timur berupa kawasan perbukitan dan pegunungan yang berada di lereng <b>Gunung Lawu</b>. Kondisi geografis ini menjadikan Karanganyar memiliki udara yang sejuk serta potensi besar di sektor <b>pertanian, perkebunan, dan pariwisata</b>.
 </p>
 <p class="justify-text">
-    Kabupaten Karanganyar berbatasan dengan <b>Kabupaten Sragen</b> di sebelah utara, <b>Kabupaten Ngawi</b> (Jawa Timur) dan <b>Kabupaten Magetan</b> (Jawa Timur) di sebelah timur, <b>Kabupaten Wonogiri</b> di sebelah selatan, serta <b>Kota Surakarta, Kabupaten Sukoharjo, dan Kabupaten Boyolali</b> di sebelah barat. Letak geografis yang strategis menjadikan Karanganyar sebagai salah satu daerah penyangga pertumbuhan ekonomi di kawasan Solo Raya.
+    Kabupaten Karanganyar berbatasan dengan <b>Kabupaten Sragen</b> di sebelah utara, <b>Kabupaten Ngawi(Jawa Timur)</b>  dan <b>Kabupaten Magetan (Jawa Timur)</b> di sebelah timur, <b>Kabupaten Wonogiri</b> di sebelah selatan, serta <b>Kota Surakarta, Kabupaten Sukoharjo,</b> dan<b>Kabupaten Boyolali</b> di sebelah barat. Letak geografis yang strategis menjadikan <b>Karanganyar</b> sebagai salah satu daerah penyangga pertumbuhan ekonomi di kawasan <b>Solo Raya</b>.
 </p>
-<button href = "https://id.wikipedia.org/wiki/Kabupaten_Karanganyar#Geografi" class="btn btn-primary">Informasi Lengkap</button>
+<button class="btn btn-primary">Informasi Lengkap</button>
 </div>
 
-<div class="col-lg-6 reveal">
+<div class="col-lg-6 col-12 mb-4 mb-lg-0 order-1 order-lg-2 reveal">
 <img src="https://i.pinimg.com/736x/89/ad/31/89ad31f44ba1cd7d5af278888f7477ae.jpg" class="img-fluid rounded shadow">
 </div>
 
@@ -224,6 +323,324 @@ Karanganyar dikenal sebagai daerah wisata pegunungan dengan ikon utama <i>Grojog
 </div>
 </section>
 
+<!-- ================= MODAL ================= -->
+<!-- Modal untuk Grojogan Sewu (Sesuaikan ID-nya kalau beda) -->
+<div class="modal fade" id="modalGrojoganSide" tabindex="-1" aria-labelledby="modalGrojoganSideLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      
+      <div class="modal-body p-0">
+        
+        <!-- Grid Row Bootstrap -->
+        <div class="row g-0">
+          
+          <!-- KOLOM KIRI: FOTO -->
+          <div class="col-md-5">
+            <img src="https://i.pinimg.com/736x/e5/63/fc/e563fc2bfc0b0afc601f91e7a9a2d3ef.jpg" class="img-fluid img-modal-side" alt="Foto Grojogan Sewu">
+          </div>
+          
+          <!-- KOLOM KANAN: TEKS -->
+          <div class="col-md-7">
+            <div class="p-4"> 
+              
+              <!-- Header di dalam kolom teks -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title" id="modalGrojoganSideLabel">
+                  <span class="badge bg-danger rounded-pill px-3 py-2 text-uppercase font-weight-bold">WISATA ALAM</span>
+                  <b class="d-block mt-2">Air Terjun Grojogan Sewu</b>
+                </h5>
+                <!-- Tombol Silang [X] -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <!-- Isi Detail -->
+              <div class="modal-info">
+                <p>
+                  <span class="text-warning">&#9733; 4.8</span> · (124 ulasan pengunjung)
+                </p>
+                <h6 class="text-uppercase text-secondary"><b>Deskripsi</b></h6>
+                <p>
+                  Nikmati keindahan Air Terjun Grojogan Sewu yang mempesona. Terletak di kawasan Tawangmangu, air terjun setinggi 81 meter ini dikelilingi hutan yang asri dan udara yang sejuk. Selain air terjun utama, pengunjung juga dapat melihat berbagai jenis monyet ekor panjang. Tempat ini sangat cocok untuk wisata keluarga dan pecinta alam.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock"></i> Jam Operasional: 08:00 - 17:00 WIB</li>
+                  <li><i class="bi bi-cash"></i> Tiket Masuk: Rp. 20.000 / orang</li>
+                </ul>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://maps.app.goo.gl/3YMGe9ifcQV6w13n8" target="_blank" class="btn btn-success">Lihat Rute Lokasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal untuk Candi Cetho-->
+<div class="modal fade" id="modalCethoSide" tabindex="-1" aria-labelledby="modalCethoSideLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      
+      <div class="modal-body p-0">
+        
+        <!-- Grid Row Bootstrap -->
+        <div class="row g-0">
+          
+          <!-- KOLOM KIRI: FOTO -->
+          <div class="col-md-5">
+            <img src="https://i.pinimg.com/736x/fb/a7/d4/fba7d46848dba16efa91f95edcbad383.jpg" class="img-fluid img-modal-side" alt="Foto Candi Cetho">
+          </div>
+          
+          <!-- KOLOM KANAN: TEKS -->
+          <div class="col-md-7">
+            <div class="p-4"> 
+              
+              <!-- Header di dalam kolom teks -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title" id="modalGrojoganSideLabel">
+                  <span class="badge bg-danger rounded-pill px-3 py-2 text-uppercase font-weight-bold">CAGAR BUDAYA</span>
+                  <b class="d-block mt-2">Candi Cetho</b>
+                </h5>
+                <!-- Tombol Silang [X] -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <!-- Isi Detail -->
+              <div class="modal-info">
+                <p>
+                  <span class="text-warning">&#9733; 4.7</span> · (4.250 ulasan pengunjung)
+                </p>
+                <h6 class="text-uppercase text-secondary"><b>Deskripsi</b></h6>
+                <p>
+                  Candi Cetho merupakan candi bercorak Hindu peninggalan masa akhir pemerintahan Kerajaan Majapahit (abad ke-15). Terletak di lereng Gunung Lawu pada ketinggian 1.496 mdpl, candi ini menawarkan panorama alam yang memukau dan sering kali diselimuti kabut eksotis. Arsitektur candinya cukup unik karena berbentuk punden berundak, mirip dengan kultur peninggalan zaman prasejarah.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock"></i> Jam Operasional: 07:00 - 17:00 WIB</li>
+                  <li><i class="bi bi-cash"></i> Tiket Masuk: Rp. 15.000 / orang</li>
+                </ul>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://maps.app.goo.gl/8Mk8EUiP1mqozCoK6" target="_blank" class="btn btn-success">Lihat Rute Lokasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal untuk Candi Sukuh-->
+<div class="modal fade" id="modalSukuhSide" tabindex="-1" aria-labelledby="modalSukuhSideLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      
+      <div class="modal-body p-0">
+        
+        <!-- Grid Row Bootstrap -->
+        <div class="row g-0">
+          
+          <!-- KOLOM KIRI: FOTO -->
+          <div class="col-md-5">
+            <img src="https://i.pinimg.com/736x/5b/f2/90/5bf29092ebfbd6c812473f60d88421d2.jpg" class="img-fluid img-modal-side" alt="Foto Candi Sukuh">
+          </div>
+          
+          <!-- KOLOM KANAN: TEKS -->
+          <div class="col-md-7">
+            <div class="p-4"> 
+              
+              <!-- Header di dalam kolom teks -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title" id="modalGrojoganSideLabel">
+                  <span class="badge bg-danger rounded-pill px-3 py-2 text-uppercase font-weight-bold">CAGAR BUDAYA</span>
+                  <b class="d-block mt-2">Candi Sukuh</b>
+                </h5>
+                <!-- Tombol Silang [X] -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <!-- Isi Detail -->
+              <div class="modal-info">
+                <p>
+                  <span class="text-warning">&#9733; 4.6</span> · (2.850 ulasan pengunjung)
+                </p>
+                <h6 class="text-uppercase text-secondary"><b>Deskripsi</b></h6>
+                <p>
+                Candi Sukuh adalah candi Hindu yang sangat unik dan kontroversial karena arsitekturnya yang menyerupai piramida suku Maya di Meksiko. Dibangun pada abad ke-15 menjelang runtuhnya Kerajaan Majapahit, candi ini terletak di lereng barat Gunung Lawu. Di sini kamu bisa melihat berbagai relief dan patung unik yang melambangkan kesuburan dan pelepasan kutukan.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock"></i> Jam Operasional: 07:00 - 17:00 WIB</li>
+                  <li><i class="bi bi-cash"></i> Tiket Masuk: Rp. 15.000 / orang</li>
+                </ul>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://maps.app.goo.gl/WG4rZvXkUEx2Thb3A" target="_blank" class="btn btn-success">Lihat Rute Lokasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalJumog" tabindex="-1" aria-labelledby="modalJumogLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="row g-0">
+          
+          <div class="col-md-5 col-12 order-1 order-md-1">
+            <img src="https://i.pinimg.com/1200x/d8/82/2c/d8822ce0d3c4f995b7fe012f83fdd642.jpg" class="img-fluid img-modal-side" alt="Foto Air Terjun Jumog" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          
+          <div class="col-md-7 col-12 order-2 order-md-2">
+            <div class="p-4"> 
+              
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title" id="modalJumogLabel">
+                  <span class="badge bg-success rounded-pill px-3 py-2 text-uppercase font-weight-bold">WISATA ALAM</span>
+                  <b class="d-block mt-2">Air Terjun Jumog</b>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-info">
+                <p>
+                  <span class="text-warning">★ 4.7</span> · (1.920 ulasan pengunjung)
+                </p>
+                <h6 class="text-uppercase text-secondary"><b>Deskripsi</b></h6>
+                <p>
+                Air Terjun Jumog sering dijuluki "Surga yang Hilang" karena keasrian alamnya yang sangat terjaga di lereng Gunung Lawu. Berbeda dengan air terjun lain yang jalurnya terjal, akses menuju Jumog cukup landai dan sangat ramah keluarga. Di sini, kamu bisa menikmati kesegaran aliran air jernih sambil bersantai di jembatan kayu yang ikonik.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock"></i> Jam Operasional: 08:00 - 16:00 WIB</li>
+                  <li><i class="bi bi-cash"></i> Tiket Masuk: Rp. 15.000 / orang</li>
+                </ul>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://maps.google.com/?q=Air+Terjun+Jumog" target="_blank" class="btn btn-success">Lihat Rute Lokasi</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalLawuPark" tabindex="-1" aria-labelledby="modalLawuParkLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="row g-0">
+          
+          <div class="col-md-5 col-12 order-1 order-md-1">
+            <img src="https://i.pinimg.com/1200x/e7/60/3a/e7603a55b749982070645453ef3046c0.jpg" class="img-fluid img-modal-side" alt="Foto The Lawu Park" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          
+          <div class="col-md-7 col-12 order-2 order-md-2">
+            <div class="p-4"> 
+              
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title" id="modalLawuParkLabel">
+                  <span class="badge bg-primary rounded-pill px-3 py-2 text-uppercase font-weight-bold">REKREASI KELUARGA</span>
+                  <b class="d-block mt-2">The Lawu Park</b>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-info">
+                <p>
+                  <span class="text-warning">★ 4.5</span> · (3.110 ulasan pengunjung)
+                </p>
+                <h6 class="text-uppercase text-secondary"><b>Deskripsi</b></h6>
+                <p>
+                The Lawu Park adalah destinasi wisata keluarga berkonsep eco-adventure di tengah hutan pinus yang rindang. Daya tarik utamanya adalah "Snow Park", wahana bersalju buatan di tengah udara dingin gunung. Tempat ini juga dilengkapi dengan fasilitas glamping, taman kelinci, outbound, dan banyak spot foto instagenic.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock"></i> Jam Operasional: 08:00 - 17:00 WIB</li>
+                  <li><i class="bi bi-cash"></i> Tiket Masuk: Rp. 20.000 - Rp. 25.000 / orang</li>
+                </ul>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://maps.google.com/?q=The+Lawu+Park" target="_blank" class="btn btn-success">Lihat Rute Lokasi</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMadirda" tabindex="-1" aria-labelledby="modalMadirdaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="row g-0">
+          
+          <div class="col-md-5 col-12 order-1 order-md-1">
+            <img src="https://i.pinimg.com/1200x/35/81/89/35818967dc46e8de9953c2594cf4d52f.jpg" class="img-fluid img-modal-side" alt="Foto Telaga Madirda" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          
+          <div class="col-md-7 col-12 order-2 order-md-2">
+            <div class="p-4"> 
+              
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title" id="modalMadirdaLabel">
+                  <span class="badge bg-info rounded-pill px-3 py-2 text-uppercase text-dark font-weight-bold">HEALING SPOT</span>
+                  <b class="d-block mt-2">Telaga Madirda</b>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-info">
+                <p>
+                  <span class="text-warning">★ 4.6</span> · (1.540 ulasan pengunjung)
+                </p>
+                <h6 class="text-uppercase text-secondary"><b>Deskripsi</b></h6>
+                <p>
+                Telaga Madirda merupakan danau alami tersembunyi yang menawarkan air super jernih berlatar puncak Gunung Lawu. Suasananya yang tenang menjadikannya lokasi favorit untuk melepas penat. Pengunjung bisa menyewa perahu kano, memancing, atau mendirikan tenda untuk camping ceria bersama teman maupun keluarga.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock"></i> Jam Operasional: 07:00 - 17:00 WIB</li>
+                  <li><i class="bi bi-cash"></i> Tiket Masuk: Rp. 15.000 / orang</li>
+                </ul>
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://maps.google.com/?q=Telaga+Madirda" target="_blank" class="btn btn-success">Lihat Rute Lokasi</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <!-- ================= FOOTER ================= -->
 <footer id="kontak" class="bg-dark text-light pt-5">
 <div class="container">
@@ -238,25 +655,26 @@ Karanganyar dikenal sebagai daerah wisata pegunungan dengan ikon utama <i>Grojog
 <h5>Quick Links</h5>
 <ul class="list-unstyled">
 <li><a href="#beranda">Beranda</a></li>
+<li><a href="#wisata">Wisata</a></li>
+<li><a href="#kuliner-khas">Kuliner</a></li>
 <li><a href="#sejarah">Sejarah</a></li>
 <li><a href="#geografis">Geografis</a></li>
-<li><a href="#wisata">Wisata</a></li>
 </ul>
 </div>
 
 <div class="col-lg-3 col-md-6 mb-4">
 <h5>Kontak</h5>
-<p><i class="bi bi-envelope"></i> info@karanganyar.go.id</p>
-<p><i class="bi bi-telephone"></i> (0271) 123456</p>
+<p><i class="bi bi-envelope"></i> misilyas83@gmail.com</p>
+<p><i class="bi bi-telephone"></i> 085283152913 </p>
 <p><i class="bi bi-geo-alt"></i> Karanganyar, Jawa Tengah</p>
 </div>
 
 <div class="col-lg-3 col-md-6 mb-4">
 <h5>Media Sosial</h5>
-<p><i class="bi bi-instagram"></i> Instagram</p>
-<p><i class="bi bi-facebook"></i> Facebook</p>
-<p><i class="bi bi-youtube"></i> YouTube</p>
-<p><i class="bi bi-twitter-x"></i> Twitter/X</p>
+<p><i class="bi bi-instagram"></i>  <a href="https://www.instagram.com/kimen_m24?igsh=NTdoam5pMGdvbG45">Instagram</a></p>
+<p><i class="bi bi-facebook"></i>  <a href="">Facebook</a></p>
+<p><i class="bi bi-youtube"></i>  <a href="">YouTube</a></p>
+<p><i class="bi bi-twitter-x"></i>  <a href="">Twittwe/X</a></p>
 </div>
 
 </div>
